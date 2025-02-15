@@ -1,0 +1,85 @@
+.cabecalho {
+  background-color: var(--cor-secundaria);
+  padding: 16px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho nav {
+  display: flex;
+  gap: 96px;
+}
+
+.cabecalho nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cabecalho nav ul li a {
+  color: var(--cor-branco);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 26px 0;
+}
+
+.cabecalho > div {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+
+.cabecalho > div div {
+  display: flex;
+  gap: 32px;
+}
+
+.cabecalho > div #notifications #bell {
+  position: relative;
+}
+
+.cabecalho > div #notifications #bell div {
+  width: 10px;
+  height: 10px;
+  background-color: #adff2f;
+  border-radius: 100%;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  animation-name: notification-bell;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.cabecalho > div #notifications img {
+    padding: 10px;
+    transition: .5px;
+    border-radius: 100%;
+    &:hover {
+        background-color: var(--cor-botao);
+    }
+}
+
+.cabecalho > div #notifications #bell img {
+    background-color: var(--cor-botao);
+    border-radius: 100%;
+}
+
+@keyframes notification-bell {
+  from {
+    background-color: greenyellow;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+.cabecalho > div #profile img {
+    width: 48px;
+    border-radius: 100%;
+    border: 2px solid #1b2838;
+    transition: .5s;
+}
