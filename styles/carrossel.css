@@ -1,0 +1,17 @@
+.carrossel {
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrossel article .slides img {
+    width: 100%;
+    background-position: right;
+}
+
