@@ -1,0 +1,75 @@
+.grid-layout {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.filter #menu-filter {
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    margin-top: 96px;
+    border-radius: 4px;
+    padding: 24px 40px;
+}
+
+.filter #menu-filter ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter #menu-filter ul li a {
+    color: var(--cor-branco);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 22px 0;
+    &:hover {
+        color: var(--cor-botao);
+
+    }
+}
+
+.filter #container-input {
+    margin-top: 40px;
+    background-color: var(--cor-secundaria);
+    border-radius: 4px;
+}
+
+.filter #container-input input {
+    padding: 16px 40px;
+    width: 100%;
+    color: var(--cor-branco);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: url(/assets/search.svg) no-repeat right;
+    background-size: 24px;
+    background-position-x: 98%;
+}
+
+.cards-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin: 80px 0;
+    position: absolute;
+    
+}
+
+.cards-filter>div {
+    height: 100%;
+    width: 100%;
+}
+
+.cards-filter>div img {
+    border-radius: 4px;
+}
+
+.cards-filter>div #filter-logo {
+    position: relative;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

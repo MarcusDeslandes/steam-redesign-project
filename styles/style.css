@@ -1,6 +1,7 @@
 @import url(/styles/reset.css);
 @import url(/styles/header.css);
 @import url(/styles/carrossel.css);
+@import url(/styles/filter.css);
 
 :root {
     --cor-de-fundo: #0e131e;
