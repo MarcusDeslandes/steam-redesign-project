@@ -2,6 +2,7 @@
     overflow: hidden;
     height: 500px;
     width: 100%;
+    /* position: absolute; */
 }
 
 .slides {
@@ -10,8 +11,11 @@
     transform: translateX(0);
 }
 
-.carrossel article .slides img {
+#img {
     width: 100%;
-    background-position: right;
 }
 
+#carrossel-img-1 {
+    position: relative;
+    
+}
