@@ -25,6 +25,7 @@
   padding: 26px 0;
   &:hover {
     color: var(--cor-botao);
+    border-bottom: 3px solid var(--cor-botao);
   }
 }
 

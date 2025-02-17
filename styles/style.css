@@ -2,18 +2,27 @@
 @import url(/styles/header.css);
 @import url(/styles/carrossel.css);
 @import url(/styles/filter.css);
+@import url(/styles/navigation.css);
+@import url(/styles/category.css);
+@import url(/styles/games-free.css);
 
 :root {
-    --cor-de-fundo: #0e131e;
-    --cor-secundaria: #1b2838;
-    --cor-botao: #0094ff;
-    --cor-branco: #ffffff;
-    --fonte-principal: "Inter";
+  --cor-de-fundo: #0e131e;
+  --cor-secundaria: #1b2838;
+  --cor-botao: #0094ff;
+  --cor-branco: #ffffff;
+  --fonte-principal: "Inter";
 }
 
 body {
-    background-color: #0e131e;
-    font-family: var(--fonte-principal);
-    font-size: 18px;
-    overflow-x: hidden;
+  background-color: #0e131e;
+  font-family: var(--fonte-principal);
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+.grid-layout {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

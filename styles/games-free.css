@@ -1,0 +1,112 @@
+.free-games {
+  margin: 80px 0;
+
+}
+
+.free-games h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: var(--cor-branco);
+  font-weight: 600;
+}
+
+.layout-free-games {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.layout-free-games article {
+  background-color: var(--cor-secundaria);
+  border-radius: 5px;
+  color: var(--cor-branco);
+  overflow: hidden;
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.layout-free-games article .container-image {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.layout-free-games article .container-image img {
+  transition: 0.5s transform;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+.layout-free-games article .container-content {
+    padding: 32px;
+    height: 40%;
+    width: 100%;
+    
+}
+
+.layout-free-games article .container-content h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.layout-free-games article .container-content p {
+    font-size: 1.6rem;
+    margin: 12px 0 20px 0;
+    color: #aaa;
+}
+
+.layout-free-games article .container-content > span {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.layout-free-games article .container-content > span #category-value {
+    background-color: var(--cor-botao);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.layout-free-games article .container-content > span #category-value-old {
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.layout-free-games article .container-content > span p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--cor-branco);
+}
+
+.layout-free-games div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.layout-free-games > div > article {
+    width: 100%;
+    height: 47%;
+}
+
+.layout-free-games > div > article .container-image {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.layout-free-games > div > article .container-content {
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
