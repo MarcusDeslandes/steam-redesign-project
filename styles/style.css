@@ -5,6 +5,7 @@
 @import url(/styles/navigation.css);
 @import url(/styles/category.css);
 @import url(/styles/games-free.css);
+@import url(/styles/footer.css);
 
 :root {
   --cor-de-fundo: #0e131e;

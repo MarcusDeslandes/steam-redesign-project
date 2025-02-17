@@ -104,14 +104,14 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: gap-8;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: bg-main;
+  background-color: var(--cor-de-fundo);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: color-main;
-  border-radius: gap-8;
+  background-color: var(--cor-botao);
+  border-radius: 8px;
 }

@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <meta name="copyright" content="Iuri Silva 2023" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:image" content="assets/image/preview.png" />
+    <meta property="og:title" content="Steam (Redesign)" />
 </head>
 <body>
     <header class="cabecalho">
@@ -47,16 +51,80 @@
     </header>
 
     <main>
-        <div class="carrossel">
+        <header id="carrossel">
             <article>
-                <div class="slides" id="img">
-                    <img id= "carrossel-img-1" src="/assets/banner-1.png" alt="">
-                    <img id= "carrossel-img-2" src="/assets/banner-2.jpg" alt="">
-                    <img id= "carrossel-img-3" src="/assets/banner-3.jpg" alt="">
-                    <img id= "carrossel-img-4" src="/assets/banner-4.jpg" alt="">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-bnt" id="radio1">
+                        <input type="radio" name="radio-bnt" id="radio2">
+                        <input type="radio" name="radio-bnt" id="radio3">
+                        <input type="radio" name="radio-bnt" id="radio4">
+                        <div class="slide banner-1 first">
+                            <div class="bg-cover-dark"></div>
+                            <div class="grid-layout-banner">
+                                <img src="/assets/logo-red-dead.png" alt="">
+                                <p>Estados Unidos, 1899. O fim da era do velho oeste começou, e
+                                    as autoridades estão caçando as últimas gangues de fora da
+                                    lei que restam. Os que não se rendem, nem sucumbem, são
+                                    mortos.
+                                </p>
+                                <a href="#">
+                                    <button>Compre Agora</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide banner-2">
+                            <div class="bg-cover-dark"></div>
+                            <div class="grid-layout-banner">
+                                <img src="/assets/dead-by-daylight.png" alt="">
+                                <p>Dead by Daylight é um jogo eletrônico multijogador online assimétrico de survival horror 
+                                    desenvolvido pela Behaviour Interactive.
+                                </p>
+                                <a href="#">
+                                    <button>Saiba Mais</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide banner-3">
+                            <div class="bg-cover-dark"></div>
+                            <div class="grid-layout-banner">
+                                <img src="/assets/the-last-of-us.png" alt="">
+                                <p>The Last of Us é uma franquia situada em um mundo pós-apocalíptico, 
+                                    com seres humanos hostis e criaturas canibais infectadas por uma mutação do fungo cordyceps.
+                                </p>
+                                <a href="#">
+                                    <button>Assistir Trailer</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide banner-4">
+                            <div class="bg-cover-dark"></div>
+                            <div class="grid-layout-banner">
+                                <img src="/assets/assassins-creed.webp" alt="">
+                                <p>A série de jogos Assassin's Creed, ao contrário da violência do conflito entre os grupos do game (assassinos e templários), 
+                                    mostra a evolução da sociedade humana como cenário dos jogos.
+                                </p>
+                                <a href="#">
+                                    <button>Comprar na pré-venda</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="manual-navigation">
+                        <label for="radio1"></label>
+                        <label for="radio2"></label>
+                        <label for="radio3"></label>
+                        <label for="radio4"></label>
+                    </div>
                 </div>
             </article>            
-        </div>
+        </header>
 
         <section class="filter">
             <div class="grid-layout">
@@ -265,8 +333,12 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <a href="#"><img src="/assets/logo-steam.svg" alt=""></a>
+    </footer>
     
-    <script id= "filter-logo" src="/script.js"></script>
+    <script type="module" src="/js/index.js"></script>
 
 </body>
 </html>
